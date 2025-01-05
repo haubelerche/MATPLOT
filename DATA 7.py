@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-import numpy as np  # Thêm thư viện numpy
+import numpy as np
 
 months = ["7-23", "10-23", "1-24", "4-24", "7-24"]
 cpi_values = [2.6, 2.96, 3.66, 3.59, 3.45]
@@ -7,7 +7,7 @@ cpi_values = [2.6, 2.96, 3.66, 3.59, 3.45]
 plt.figure(figsize=(8, 6))
 plt.plot(months, cpi_values, marker='o', linestyle='--', color='green')
 
-z = np.polyfit(range(len(cpi_values)), cpi_values, 1)
+z = np.polyfit(range(len(cpi_values)), cpi_values,1)
 p = np.poly1d(z)
 plt.plot(months, p(range(len(cpi_values))), color='red')
 

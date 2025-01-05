@@ -4,11 +4,10 @@ import numpy as np
 years = ['2018', '2019', '2020', '2021', '2022', '2023', '2024F']
 vietnam = [20, 25, 20, 10, 59, 60, 61]
 china = [40, 42, 40, 41, 9, 9, 9]
-kazakhstan = [28, 28, 25, 29, 22, 20, 20]  # Không có dữ liệu cho Kazakhstan trong năm này
-
+kazakhstan = [28, 28, 25, 29, 22, 20, 20]
 bar_width = 0.25
-x = np.arange(len(years))
 
+x = np.arange(len(years))
 plt.bar(x - bar_width, vietnam, width=bar_width, color=['#F06038'], label='Việt Nam')
 plt.bar(x, china, width=bar_width, color=['#FCC560'], label='Trung Quốc')
 plt.bar(x + bar_width, kazakhstan, width=bar_width, color=['#B9C94C'], label='Kazakhstan')
